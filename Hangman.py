@@ -13,8 +13,12 @@ for x in hidden_word:
     hidden_word_store.append("-")
 
 while playing:
+    # Checking if the player ran out of lives
+    if lives == 0:
+        playing = False
+        print(f"You lost! The word was: {hidden_word}")
     # Checking if the player has guess the whole word
-    if "-" not in hidden_word_store:
+    elif "-" not in hidden_word_store:
         print(f"You guess the word! It was {hidden_word}")
         playing = False
     # Runs if the word has not been guessed yet
@@ -30,5 +34,5 @@ while playing:
         # If the guesser incorrectly guesses the word
         else:
             print("That's not in the word!")
-            lives-=1
-
+            lives -= 1
+    print()
