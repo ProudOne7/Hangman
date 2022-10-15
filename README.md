@@ -1,3 +1,1 @@
-A simple game of Hangman
-First player enters a word of any length
-Then the second player gets 5 chances to guess what the word is
+A simple game of Hangman. The first player enters a word then the second player tries to guess what the word is.
